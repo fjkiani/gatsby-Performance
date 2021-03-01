@@ -10,7 +10,7 @@ import SocialLinks from "../constants/socialLinks"
 
 const query =  graphql `
  {
-  file(relativePath: {eq: "you-x-ventures.jpg"}) {
+  fluid: file(relativePath: {eq: "you-x-ventures.jpg"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
@@ -35,11 +35,11 @@ const Hero = () => {
 
   //   }
   // }, [])
-  const {
-    file: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
+  // const {
+  //   file: {
+  //     childImageSharp: { fluid },
+  //   },
+  // } = useStaticQuery(query)
 
   const data = useStaticQuery(query);
   // console.log(data)
@@ -49,7 +49,7 @@ const Hero = () => {
     <Box sx={{
       position: 'relative'
     }}>
-     <Image fluid={fluid}/>
+     <Image fluid={data.fluid.childImageSharp.fluid}></Image>
       <div style={{
         // backgroundImage: "url('/you-x-ventures-nF0nQuqBsrI-unsplash.jpg')",
         height: '50vh',
