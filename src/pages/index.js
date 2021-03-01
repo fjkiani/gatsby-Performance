@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 
 // import Footer from "../components/footer"
 import Header from '../components/header/Header';
-import Hero from "../components/hero"
+import Hero from "../components/Hero"
 import Footer from "../components/Footer"
 
 
