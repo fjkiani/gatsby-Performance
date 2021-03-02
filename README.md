@@ -1,3 +1,7 @@
+Deployed link
+https://awesome-wing-6b4872.netlify.app
+
+
 ## Setup Notes
 
 1. All components ready to go (including imports)
