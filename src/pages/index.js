@@ -68,11 +68,11 @@ const IndexPage = ({dat}) => {
  
         <Grid gap={2}
           columns={[2, '1fr 1fr']}>
+          
           <Box p="4">
-       <Image fluid={data.fluid.childImageSharp.fluid}></Image>
-    
-
+          <Image fluid={data.fluid.childImageSharp.fluid}></Image>
           </Box>
+
           <Box p="4">
             <Text mb={3}>
               Lorem ipsum dolor sit amet consectetur adipiscing
@@ -99,6 +99,7 @@ const IndexPage = ({dat}) => {
           </Box>
         </Grid>
       </Container>
+      <Footer/>
     </main>
   )
 }
